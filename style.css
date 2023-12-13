@@ -52,7 +52,7 @@ Large: 1.8
   --hover-tint: #a33795;
   --lightest-tint: #fff9fe;
   --pinkish-tint: #ddb4d7;
-  --darkest-shade: #0e000c;
+  --darkest-shade: #2e0728;
 
   --blue-hue: #339af0;
   --red-hue: #e03131;
@@ -166,6 +166,11 @@ a {
   text-decoration: none;
 }
 
+h2,
+h3 {
+  color: var(--darkest-shade);
+}
+
 .navbar {
   min-height: 70px;
   display: flex;
@@ -245,7 +250,7 @@ a {
   }
 
   .nav-item {
-    margin: 16px 0;
+    margin: 32px 0;
   }
 
   .nav-menu.active {
@@ -292,6 +297,7 @@ a {
 .hero-description span {
   color: var(--lightest-tint);
   font-weight: 100;
+  margin: 16px 0;
 }
 
 .hero-text-box a:link,
@@ -371,11 +377,16 @@ a {
   background-color: var(--hover-tint);
   box-shadow: 0 12px 14px 12px rgba(0, 0, 0, 0.1);
 
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 #clients p {
   font-size: 18px;
+}
+
+.client h2 {
+  line-height: 1;
+  margin-bottom: 18px;
 }
 
 #about {
